@@ -2,6 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 const defaultLinks = [
   { label: 'Home', href: '/home' },
+  { label: 'About', href: '/about' },
   { label: 'Stays', href: '/home#stays' },
   { label: 'Experiences', href: '/home#experiences' },
   { label: 'Wellness', href: '/home#wellness' },
