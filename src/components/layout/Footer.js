@@ -32,7 +32,7 @@ const Footer = ({ sections = defaultSections }) => {
     <footer className="border-t border-emerald-100 bg-emerald-950 text-emerald-50">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-serif text-3xl">Tapovan</p>
+          <p className="font-serif text-3xl">Tapovan Resort</p>
           <p className="mt-3 text-sm text-emerald-200">
             Boutique mountain resort where sustainability, Ayurveda, and slow living meet.
           </p>
@@ -66,7 +66,7 @@ const Footer = ({ sections = defaultSections }) => {
 
       <div className="border-t border-emerald-900/40 bg-emerald-900/40">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 text-xs text-emerald-300 sm:flex-row">
-          <span>© {currentYear} Tapovan Retreats. All rights reserved.</span>
+          <span>© {currentYear} Tapovan Resort. All rights reserved.</span>
           <div className="flex items-center gap-6">
             <a href="/privacy" className="transition hover:text-white">
               Privacy

@@ -1,5 +1,5 @@
 const HeroSection = ({
-  title = 'Tapovan: Sanctuary in the Himalayas',
+  title = 'Tapovan Resort: Tranquility Lives Here',
   subtitle = 'Immersive slow travel, forest bathing, and mindful hospitality.',
   highlights = [
     'Private suites overlooking the Ganges valley',

@@ -9,7 +9,7 @@ const defaultLinks = [
 ];
 
 const Header = ({
-  logoText = 'Tapovan',
+  logoText = 'Tapovan Resort',
   tagline = 'Himalayan Hideaway',
   navLinks = defaultLinks,
   cta = { label: 'Plan a Stay', href: '/home#enquire' },

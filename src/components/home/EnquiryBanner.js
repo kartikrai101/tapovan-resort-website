@@ -1,5 +1,5 @@
 const EnquiryBanner = ({
-  title = 'Ready to design your Tapovan itinerary?',
+  title = 'Ready to design your Tapovan Resort itinerary?',
   description = 'Share your travel window and wellness priorities. Our concierge will respond within 12 hours.',
   buttonLabel = 'Start Your Journey',
   buttonHref = '#contact',

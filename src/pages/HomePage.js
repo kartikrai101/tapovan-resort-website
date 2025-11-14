@@ -26,7 +26,8 @@ const HomePage = () => {
                 Slow down and re-align with nature&apos;s pace
               </h2>
               <p className="text-lg text-slate-600">
-                Tapovan is a boutique resort perched above the sacred Ganges valley. Designed with
+                Tapovan Resort is a boutique retreat nestled in the forested hills of Chitrakoot,
+                Madhya Pradesh. Designed with
                 biophilic architecture, we integrate Ayurveda, mindful cuisine, and purposeful
                 excursions to help guests reset.
               </p>
@@ -117,7 +118,7 @@ const HomePage = () => {
               <div className="mt-8 space-y-4 text-sm text-slate-700">
                 <p>📞 +91 98765 43210</p>
                 <p>✉️ journeys@tapovan.com</p>
-                <p>📍 Tapovan Village, Rishikesh, Uttarakhand</p>
+                <p>📍 Tapovan Resort, Chitrakoot District, Madhya Pradesh</p>
               </div>
             </div>
             <form className="space-y-4">
