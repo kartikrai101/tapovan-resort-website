@@ -13,7 +13,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="space-y-20">
+      <main className="space-y-12">
         <HeroSection />
 
         <section
