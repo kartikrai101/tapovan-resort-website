@@ -1,24 +1,25 @@
+import carouselImg1 from '../../images/tapovan_img1.jpeg';
+import carouselImg4 from '../../images/tapovan_img4.jpeg';
+import carouselImg5 from '../../images/tapovan_img2.jpeg';
+
 const StayShowcase = ({
   stays = [
     {
-      title: 'River-Facing Suites',
-      description: 'Expansive decks, soaking tubs, and curated art celebrating Garhwal.',
-      image:
-        'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80',
+      title: 'Greenery all around',
+      description: 'Immerse yourself in lush tropical gardens, verdant landscapes, and nature\'s embrace with panoramic views of the surrounding forest canopy.',
+      image: carouselImg1,
       tag: 'Most Loved',
     },
     {
-      title: 'Forest Villas',
-      description: 'Private plunge pools, meditation corners, and butler service.',
-      image:
-        'https://images.unsplash.com/photo-1484100356142-db6ab6244067?auto=format&fit=crop&w=800&q=80',
+      title: 'Swimming Pool',
+      description: 'Take a refreshing dip in our pristine pool surrounded by lush greenery, with poolside lounging areas and stunning views of the natural landscape.',
+      image: carouselImg4,
       tag: 'Secluded',
     },
     {
-      title: 'Glasshouse Residences',
-      description: 'Panoramic mountain views and stargazing domes with telescope concierge.',
-      image:
-        'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80',
+      title: 'Heritage Residences',
+      description: 'Panoramic views of Chitrakoot hills and stargazing domes with telescope concierge for celestial meditation.',
+      image:carouselImg5,
       tag: 'New',
     },
   ],

@@ -4,6 +4,9 @@ import HeroSection from '../components/home/HeroSection';
 import StayShowcase from '../components/home/StayShowcase';
 import ExperienceHighlights from '../components/home/ExperienceHighlights';
 import EnquiryBanner from '../components/home/EnquiryBanner';
+import parikramaImage from '../images/parikrama_image.jpg';
+import caveImage from '../images/cave_image.jpg';
+import nationalParkImage from '../images/national_park_image.jpg';
 
 const HomePage = () => {
   return (
@@ -26,17 +29,18 @@ const HomePage = () => {
                 Slow down and re-align with nature&apos;s pace
               </h2>
               <p className="text-lg text-slate-600">
-                Tapovan Resort is a boutique retreat nestled in the forested hills of Chitrakoot,
-                Madhya Pradesh. Designed with
+                Tapovan Resort is a luxury retreat nestled in the sacred hills of Chitrakoot,
+                Madhya Pradesh. Where Lord Rama once walked, we offer a sanctuary that blends
+                ancient spiritual heritage with contemporary luxury. Designed with
                 biophilic architecture, we integrate Ayurveda, mindful cuisine, and purposeful
-                excursions to help guests reset.
+                excursions to help guests reconnect with nature and inner peace.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
               {[
-                { stat: '38°C', label: 'Natural hot springs' },
+                { stat: 'Sacred', label: 'Mandakini River ghats' },
                 { stat: '15', label: 'Private suites & villas' },
-                { stat: '24/7', label: 'Wellness concierge' },
+                { stat: '24/7', label: 'Spiritual wellness concierge' },
                 { stat: '100%', label: 'Locally sourced produce' },
               ].map((item) => (
                 <div
@@ -62,28 +66,30 @@ const HomePage = () => {
         >
           <div className="space-y-6 lg:w-1/2">
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-500">
-              Wellness Atelier
+              Explore Chitrakoot
             </p>
             <h2 className="font-serif text-3xl text-emerald-950">
-              Ayurveda meets contemporary diagnostics
+              Where history, nature, and mythology converge
             </h2>
             <p className="text-lg text-slate-600">
-              Work with resident Ayurvedic doctors and nutritionists to build a ritual that follows
-              you home. Each program blends pulse diagnosis, yoga nidra, sound therapy, and curated
-              menus.
+              Discover the rich tapestry of Chitrakoot through spiritual exploration, natural wonders, 
+              historical sites, and wildlife encounters. From sacred parikramas to ancient caves, 
+              from temple visits to jungle safaris, immerse yourself in the timeless beauty of this 
+              legendary land.
             </p>
             <ul className="space-y-3 text-sm text-emerald-800">
-              <li>• Personalized dosha meals crafted with our organic farm produce</li>
-              <li>• Riverstone spa rooms with copper soaking tubs</li>
-              <li>• Nightly fireside satsang with guest philosophers</li>
+              <li>• Spiritual walks: Kamadgiri Parikrama and Ramghat rituals</li>
+              <li>• Natural wonders: Gupt Godavari Caves, Hanuman Dhara, Sphatik Shila</li>
+              <li>• Historical sites: Bharat Milap Temple and Kalinjar Fort</li>
+              <li>• Wildlife adventures: Panna National Park safaris and Janaki Kund serenity</li>
             </ul>
           </div>
           <div className="grid flex-1 gap-4 sm:grid-cols-2">
             {[
-              { label: 'Sound baths', image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80' },
-              { label: 'Yoga pavilion', image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80' },
-              { label: 'Herbal apothecary', image: 'https://images.unsplash.com/photo-1470165525439-3cf9e6dccbad?auto=format&fit=crop&w=600&q=80' },
-              { label: 'Thermal suites', image: 'https://images.unsplash.com/photo-1496412705862-e0088f16f791?auto=format&fit=crop&w=600&q=80' },
+              { label: 'Kamadgiri Parikrama', image: parikramaImage },
+              { label: 'Gupt Godavari Caves', image: caveImage },
+              { label: 'Panna National Park', image: nationalParkImage },
+              { label: 'Bharat Milap Temple', image: parikramaImage },
             ].map((item) => (
               <figure
                 key={item.label}
@@ -99,59 +105,6 @@ const HomePage = () => {
                 </figcaption>
               </figure>
             ))}
-          </div>
-        </section>
-
-        <section
-          id="contact"
-          className="mx-auto max-w-6xl rounded-3xl border border-emerald-100 bg-white px-6 py-16"
-        >
-          <div className="grid gap-10 md:grid-cols-2">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-500">
-                Contact
-              </p>
-              <h2 className="mt-4 font-serif text-3xl text-emerald-950">Connect with concierge</h2>
-              <p className="mt-4 text-lg text-slate-600">
-                Reach us for custom itineraries, group bookings, or wellness residencies.
-              </p>
-              <div className="mt-8 space-y-4 text-sm text-slate-700">
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ journeys@tapovan.com</p>
-                <p>📍 Tapovan Resort, Chitrakoot District, Madhya Pradesh</p>
-              </div>
-            </div>
-            <form className="space-y-4">
-              {[
-                { label: 'Full Name', type: 'text', name: 'name' },
-                { label: 'Email Address', type: 'email', name: 'email' },
-                { label: 'Travel Window', type: 'text', name: 'dates' },
-              ].map((field) => (
-                <div key={field.name} className="space-y-2">
-                  <label className="text-sm font-semibold text-emerald-900">{field.label}</label>
-                  <input
-                    type={field.type}
-                    name={field.name}
-                    className="w-full rounded-xl border border-emerald-100 bg-emerald-50/30 px-4 py-3 text-sm focus:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-100"
-                    placeholder={`Enter ${field.label.toLowerCase()}`}
-                  />
-                </div>
-              ))}
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-emerald-900">Intentions</label>
-                <textarea
-                  className="w-full rounded-xl border border-emerald-100 bg-emerald-50/30 px-4 py-3 text-sm focus:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-100"
-                  rows="4"
-                  placeholder="Wellness goals, group size, interests..."
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-600"
-              >
-                Submit enquiry
-              </button>
-            </form>
           </div>
         </section>
 

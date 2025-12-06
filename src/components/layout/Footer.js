@@ -34,7 +34,7 @@ const Footer = ({ sections = defaultSections }) => {
         <div>
           <p className="font-serif text-3xl">Tapovan Resort</p>
           <p className="mt-3 text-sm text-emerald-200">
-            Boutique mountain resort where sustainability, Ayurveda, and slow living meet.
+            Luxury retreat in Chitrakoot where ancient spirituality, sustainability, Ayurveda, and slow living meet.
           </p>
           <p className="mt-6 text-xs uppercase tracking-[0.35em] text-emerald-400">
             Retreat into nature

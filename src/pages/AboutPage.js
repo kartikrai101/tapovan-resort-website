@@ -13,7 +13,7 @@ const AboutPage = () => {
       <main className="mx-auto max-w-6xl space-y-16 px-6 py-12">
         <AboutHero />
 
-        <section className="grid gap-10 rounded-3xl bg-white px-6 py-12 shadow-xl shadow-emerald-100/70 md:grid-cols-2">
+        {/* <section className="grid gap-10 rounded-3xl bg-white px-6 py-12 shadow-xl shadow-emerald-100/70 md:grid-cols-2">
           <div className="space-y-4">
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-500">
               Sense of place
@@ -40,9 +40,9 @@ const AboutPage = () => {
               </article>
             ))}
           </div>
-        </section>
+        </section> */}
 
-        <HeritageTimeline />
+        {/* <HeritageTimeline />
 
         <ValuesSection />
 
@@ -78,7 +78,7 @@ const AboutPage = () => {
 
         <LeadershipShowcase />
 
-        <EnquiryBanner title="Plan an immersive Tapovan Resort learning journey" />
+        <EnquiryBanner title="Plan an immersive Tapovan Resort learning journey" /> */}
       </main>
       <Footer />
     </div>

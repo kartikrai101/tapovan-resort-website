@@ -1,9 +1,9 @@
 const AboutHero = ({
   eyebrow = 'Our Story',
-  title = 'Rooted in Chitrakoot, inspired by the Himalayas',
+  title = 'Rooted in Chitrakoot, inspired by ancient wisdom',
   description = `Tapovan Resort began as a regenerative hospitality experiment, blending ancient
   Ayurvedic wisdom with contemporary slow-travel design. Our mission is to offer intentional stays
-  that honour the forests, rivers, and communities of Chitrakoot.`,
+  that honour the sacred forests, the Mandakini River, and the spiritual heritage of Chitrakoot.`,
   stats = [
     { label: 'Acres of protected forest', value: '42' },
     { label: 'Local artisans employed', value: '67' },
@@ -12,6 +12,10 @@ const AboutHero = ({
 }) => {
   return (
     <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700 px-6 py-20 text-white shadow-2xl">
+      <div className="relative mx-auto flex max-w-6xl items-center justify-center">
+        <h1 className="font-serif text-4xl sm:text-5xl">Coming Soon...</h1>
+      </div>
+      {/* Commented out for future use:
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.3),_transparent_60%)]" />
       </div>
@@ -37,6 +41,7 @@ const AboutHero = ({
           ))}
         </div>
       </div>
+      */}
     </section>
   );
 };

@@ -1,10 +1,14 @@
+import tapovanImg from '../../images/tapovan_img_home1.jpg';
+import tapovanImg2 from '../../images/tapovan_img_home2.jpg';
+
+
 const HeroSection = ({
   title = 'Tapovan Resort: Tranquility Lives Here',
-  subtitle = 'Immersive slow travel, forest bathing, and mindful hospitality.',
+  subtitle = 'A luxury sanctuary in Chitrakoot where ancient spirituality meets contemporary comfort.',
   highlights = [
-    'Private suites overlooking the Ganges valley',
-    'Farm-to-table organic cuisine',
-    'Daily yoga and curated treks',
+    'Private suites overlooking the Mandakini River',
+    'Farm-to-table organic cuisine with local flavors',
+    'Daily yoga, meditation, and spiritual excursions',
   ],
   primaryAction = { label: 'Explore Retreat', href: '/home#stays' },
   secondaryAction = { label: 'View Experiences', href: '/home#experiences' },
@@ -18,7 +22,7 @@ const HeroSection = ({
       <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 lg:flex-row lg:items-center lg:gap-16">
         <div className="space-y-8 lg:w-1/2">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-500">
-            Himalayan Luxury Retreat
+            Chitrakoot's Luxury Retreat
           </p>
           <h1 className="font-serif text-4xl text-emerald-950 sm:text-5xl">{title}</h1>
           <p className="text-lg text-slate-600">{subtitle}</p>
@@ -51,13 +55,13 @@ const HeroSection = ({
         </div>
 
         <div className="grid flex-1 grid-cols-2 gap-4 lg:w-1/2">
-          <div className="rounded-3xl bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center min-h-[18rem]" />
-          <div className="rounded-3xl bg-[url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center min-h-[18rem]" />
+          <div className="rounded-3xl bg-cover bg-center min-h-[18rem]" style={{ backgroundImage: `url(${tapovanImg})` }} />
+          <div className="rounded-3xl bg-cover bg-center min-h-[18rem]" style={{ backgroundImage: `url(${tapovanImg2})` }} />
           <div className="col-span-2 rounded-3xl bg-white/70 p-6 backdrop-blur">
             <p className="text-sm uppercase tracking-[0.35em] text-emerald-400">Signature Ritual</p>
-            <p className="mt-2 font-serif text-2xl text-emerald-900">Sunrise River Meditation</p>
+            <p className="mt-2 font-serif text-2xl text-emerald-900">Mandakini River Meditation</p>
             <p className="mt-4 text-slate-600">
-              Begin with yogic breathing, followed by a curated breakfast featuring Himalayan superfoods.
+              Begin with yogic breathing at the sacred ghats, followed by a curated breakfast featuring local superfoods and traditional Chitrakoot delicacies.
             </p>
           </div>
         </div>

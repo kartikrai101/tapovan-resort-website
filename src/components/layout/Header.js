@@ -3,15 +3,17 @@ import { NavLink, Link } from 'react-router-dom';
 const defaultLinks = [
   { label: 'Home', href: '/home' },
   { label: 'About', href: '/about' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Amenities', href: '/amenities' },
   { label: 'Stays', href: '/home#stays' },
-  { label: 'Experiences', href: '/home#experiences' },
-  { label: 'Wellness', href: '/home#wellness' },
-  { label: 'Contact', href: '/home#contact' },
+  { label: 'FAQs', href: '/faqs' },
+  { label: 'Booking', href: '/booking' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 const Header = ({
   logoText = 'Tapovan Resort',
-  tagline = 'Himalayan Hideaway',
+  tagline = 'Chitrakoot Hideaway',
   navLinks = defaultLinks,
   cta = { label: 'Plan a Stay', href: '/home#enquire' },
   sticky = true,

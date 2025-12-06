@@ -1,21 +1,21 @@
 const ExperienceHighlights = ({
   title = 'Designed Immersions',
-  subtitle = 'Each itinerary is custom-layered with nature, culture, and restoration.',
+  subtitle = 'Each itinerary is custom-layered with Chitrakoot\'s spiritual heritage, natural beauty, and cultural richness.',
   experiences = [
     {
-      label: 'Forest Bathing',
-      description: 'Guided cedar forest walks with mindfulness prompts and locally brewed teas.',
-      icon: '🌲',
+      label: 'Sacred Ghat Walks',
+      description: 'Meditative walks along the Mandakini River ghats, following ancient spiritual paths with local guides.',
+      icon: '🕉️',
     },
     {
-      label: 'Ayurvedic Therapies',
-      description: 'Doctor-led consultations, dosha balancing meals, and steam rituals.',
-      icon: '🧘',
-    },
-    {
-      label: 'Mountain Excursions',
-      description: 'Sunrise hikes, temple visits, and rafting experiences curated by local naturalists.',
+      label: 'Adventure Enthusiasts',
+      description: 'Trekking through scenic trails, rock climbing, river rafting, and outdoor expeditions in the pristine wilderness of Chitrakoot.',
       icon: '🏔️',
+    },
+    {
+      label: 'Temple & Heritage Tours',
+      description: 'Sunrise temple visits, Ramayana heritage walks, and cultural excursions curated by local scholars.',
+      icon: '🏛️',
     },
   ],
 }) => {
