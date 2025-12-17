@@ -4,6 +4,7 @@ import HeroSection from '../components/home/HeroSection';
 import StayShowcase from '../components/home/StayShowcase';
 import ExperienceHighlights from '../components/home/ExperienceHighlights';
 import EnquiryBanner from '../components/home/EnquiryBanner';
+import Carousel from '../components/common/Carousel';
 import parikramaImage from '../images/parikrama_image.jpg';
 import caveImage from '../images/cave_image.jpg';
 import nationalParkImage from '../images/national_park_image.jpg';
@@ -30,7 +31,7 @@ const HomePage = () => {
               </h2>
               <p className="text-lg text-slate-600">
                 Tapovan Resort is a luxury retreat nestled in the sacred hills of Chitrakoot,
-                Madhya Pradesh. Where Lord Rama once walked, we offer a sanctuary that blends
+                Uttar Pradesh. Where Lord Rama once walked, we offer a sanctuary that blends
                 ancient spiritual heritage with contemporary luxury. Designed with
                 biophilic architecture, we integrate Ayurveda, mindful cuisine, and purposeful
                 excursions to help guests reconnect with nature and inner peace.
@@ -84,28 +85,55 @@ const HomePage = () => {
               <li>• Wildlife adventures: Panna National Park safaris and Janaki Kund serenity</li>
             </ul>
           </div>
-          <div className="grid flex-1 gap-4 sm:grid-cols-2">
-            {[
+          {(() => {
+            const exploreItems = [
               { label: 'Kamadgiri Parikrama', image: parikramaImage },
               { label: 'Gupt Godavari Caves', image: caveImage },
               { label: 'Panna National Park', image: nationalParkImage },
               { label: 'Bharat Milap Temple', image: parikramaImage },
-            ].map((item) => (
-              <figure
-                key={item.label}
-                className="relative h-48 overflow-hidden rounded-3xl bg-slate-200 text-white"
-              >
-                <img
-                  src={item.image}
-                  alt={item.label}
-                  className="h-full w-full object-cover transition duration-500 hover:scale-105"
+            ];
+            
+            return (
+              <>
+                {/* Mobile Carousel */}
+                <Carousel
+                  items={exploreItems}
+                  renderItem={(item) => (
+                    <figure className="relative h-48 overflow-hidden rounded-3xl bg-slate-200 text-white">
+                      <img
+                        src={item.image}
+                        alt={item.label}
+                        className="h-full w-full object-cover transition duration-500 hover:scale-105"
+                      />
+                      <figcaption className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 via-transparent to-transparent p-4 text-sm">
+                        {item.label}
+                      </figcaption>
+                    </figure>
+                  )}
+                  className="flex-1"
                 />
-                <figcaption className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 via-transparent to-transparent p-4 text-sm">
-                  {item.label}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+                
+                {/* Desktop Grid */}
+                <div className="hidden flex-1 gap-4 sm:grid sm:grid-cols-2">
+                  {exploreItems.map((item) => (
+                    <figure
+                      key={item.label}
+                      className="relative h-48 overflow-hidden rounded-3xl bg-slate-200 text-white"
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.label}
+                        className="h-full w-full object-cover transition duration-500 hover:scale-105"
+                      />
+                      <figcaption className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 via-transparent to-transparent p-4 text-sm">
+                        {item.label}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </>
+            );
+          })()}
         </section>
 
         <div className="mx-auto max-w-6xl px-6 pb-20">

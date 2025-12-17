@@ -1,6 +1,7 @@
 import carouselImg1 from '../../images/tapovan_img1.jpeg';
 import carouselImg4 from '../../images/tapovan_img4.jpeg';
 import carouselImg5 from '../../images/tapovan_img2.jpeg';
+import Carousel from '../common/Carousel';
 
 const StayShowcase = ({
   stays = [
@@ -43,7 +44,31 @@ const StayShowcase = ({
           </button>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        {/* Mobile Carousel */}
+        <Carousel
+          items={stays}
+          renderItem={(stay) => (
+            <article className="group overflow-hidden rounded-3xl bg-emerald-900">
+              <div
+                className="h-60 w-full bg-cover bg-center transition duration-500 group-hover:scale-105"
+                style={{ backgroundImage: `url(${stay.image})` }}
+              />
+              <div className="space-y-4 p-6">
+                <span className="inline-flex rounded-full bg-emerald-800 px-3 py-1 text-xs uppercase tracking-widest text-emerald-200">
+                  {stay.tag}
+                </span>
+                <h3 className="font-serif text-2xl">{stay.title}</h3>
+                <p className="text-sm text-emerald-100">{stay.description}</p>
+                <button className="text-sm font-semibold text-emerald-200 transition hover:text-white">
+                  View details →
+                </button>
+              </div>
+            </article>
+          )}
+        />
+        
+        {/* Desktop Grid */}
+        <div className="mt-12 hidden gap-6 md:grid md:grid-cols-3">
           {stays.map((stay) => (
             <article key={stay.title} className="group overflow-hidden rounded-3xl bg-emerald-900">
               <div

@@ -1,3 +1,5 @@
+import Carousel from '../common/Carousel';
+
 const ExperienceHighlights = ({
   title = 'Designed Immersions',
   subtitle = 'Each itinerary is custom-layered with Chitrakoot\'s spiritual heritage, natural beauty, and cultural richness.',
@@ -30,7 +32,25 @@ const ExperienceHighlights = ({
           <p className="mx-auto mt-4 max-w-3xl text-lg text-slate-600">{subtitle}</p>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        {/* Mobile Carousel */}
+        <Carousel
+          items={experiences}
+          renderItem={(experience) => (
+            <article className="rounded-3xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50/50 p-8 shadow-sm shadow-emerald-100 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-100/70">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
+                {experience.icon}
+              </div>
+              <h3 className="mt-6 font-serif text-2xl text-emerald-900">{experience.label}</h3>
+              <p className="mt-4 text-sm text-slate-600">{experience.description}</p>
+              <button className="mt-6 text-sm font-semibold text-emerald-600">
+                Learn more →
+              </button>
+            </article>
+          )}
+        />
+        
+        {/* Desktop Grid */}
+        <div className="mt-12 hidden gap-8 md:grid md:grid-cols-3">
           {experiences.map((experience) => (
             <article
               key={experience.label}

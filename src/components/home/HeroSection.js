@@ -6,7 +6,7 @@ const HeroSection = ({
   title = 'Tapovan Resort: Tranquility Lives Here',
   subtitle = 'A luxury sanctuary in Chitrakoot where ancient spirituality meets contemporary comfort.',
   highlights = [
-    'Private suites overlooking the Mandakini River',
+    'Private suites with lush gardens and swimming pool',
     'Farm-to-table organic cuisine with local flavors',
     'Daily yoga, meditation, and spiritual excursions',
   ],
