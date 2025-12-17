@@ -6,7 +6,7 @@ const defaultLinks = [
   { label: 'About', href: '/about' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Amenities', href: '/amenities' },
-  { label: 'Stays', href: '/home#stays' },
+  // { label: 'Stays', href: '/home#stays' },
   { label: 'FAQs', href: '/faqs' },
   { label: 'Booking', href: '/booking' },
   { label: 'Contact', href: '/contact' },

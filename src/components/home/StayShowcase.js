@@ -2,6 +2,8 @@ import carouselImg1 from '../../images/tapovan_img1.jpeg';
 import carouselImg4 from '../../images/tapovan_img4.jpeg';
 import carouselImg5 from '../../images/tapovan_img2.jpeg';
 import Carousel from '../common/Carousel';
+import swimmingPoolImg from '../../images/tapovan_swimming_pool_image1.png';
+import bedroomImg from '../../images/tapovan_resort_bedroom_image1.png';
 
 const StayShowcase = ({
   stays = [
@@ -14,13 +16,13 @@ const StayShowcase = ({
     {
       title: 'Swimming Pool',
       description: 'Take a refreshing dip in our pristine pool surrounded by lush greenery, with poolside lounging areas and stunning views of the natural landscape.',
-      image: carouselImg4,
+      image: swimmingPoolImg,
       tag: 'Secluded',
     },
     {
       title: 'Heritage Residences',
       description: 'Panoramic views of Chitrakoot hills and stargazing domes with telescope concierge for celestial meditation.',
-      image:carouselImg5,
+      image:bedroomImg,
       tag: 'New',
     },
   ],
