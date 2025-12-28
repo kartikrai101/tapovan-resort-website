@@ -4,6 +4,7 @@ import HeroSection from '../components/home/HeroSection';
 import StayShowcase from '../components/home/StayShowcase';
 import ExperienceHighlights from '../components/home/ExperienceHighlights';
 import EnquiryBanner from '../components/home/EnquiryBanner';
+import LocationMap from '../components/home/LocationMap';
 import Carousel from '../components/common/Carousel';
 import parikramaImage from '../images/parikrama_image.jpg';
 import caveImage from '../images/cave_image.jpg';
@@ -136,9 +137,11 @@ const HomePage = () => {
           })()}
         </section>
 
-        <div className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="mx-auto max-w-6xl px-6 pb">
           <EnquiryBanner />
         </div>
+
+        <LocationMap />
       </main>
 
       <Footer />
